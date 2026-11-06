@@ -123,3 +123,9 @@
 .implant-faq details>p{padding:0 20px 20px;margin:0;font-size:16px;line-height:1.7}
 .implant-faq summary:focus-visible{outline:2px solid #2a9a84;outline-offset:-3px}
 @media(max-width:540px){.implant-faq summary{font-size:16px;padding:16px}.implant-faq details>p{padding:0 16px 18px;font-size:15px}}
+
+/* Las acciones de cada tratamiento permanecen alineadas al pie. */
+.treatment{display:flex;flex-direction:column;align-items:stretch}
+.treatment>p{min-height:0;flex:1;margin-bottom:24px}
+.treatment-bottom{margin-top:auto;color:#17584e}
+.treatment:focus-visible{outline:3px solid #2a9a84;outline-offset:4px}
