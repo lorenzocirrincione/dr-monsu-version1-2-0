@@ -42,8 +42,8 @@ const treatments = {
     title: 'Estética dental',
     intro: 'Busco una sonrisa armónica, natural y compatible con la función de tus dientes. El primer paso es evaluar tu salud bucal y conversar sobre lo que te gustaría mejorar.',
     subtitle: 'Opciones según tu caso',
-    points: ['Carillas y restauraciones para trabajar la forma y la apariencia dental.', 'Blanqueamiento profesional con una planificación individual.', 'Diseño de sonrisa 3D para visualizar una propuesta de tratamiento y conversar sobre tus expectativas.'],
-    note: 'La simulación digital es una herramienta de planificación; no garantiza un resultado idéntico.'
+    points: ['Carillas y restauraciones para trabajar la forma y la apariencia dental.', 'Blanqueamiento profesional con una planificación individual.', 'Diseño digital con fotografía y video para visualizar la propuesta.', 'Maqueta provisoria para que puedas ver y probar cómo podría quedar antes de iniciar.'],
+    note: 'La simulación digital y la prueba provisoria son herramientas de planificación; el resultado final depende de la evaluación y de cada caso.'
   },
   rehabilitacion: {
     title: 'Rehabilitación oral adhesiva',
