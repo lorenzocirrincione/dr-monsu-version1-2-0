@@ -1,0 +1,68 @@
+/* Capa final para una presentación móvil más clara y compacta. */
+@media (max-width:540px){
+  html{scroll-padding-top:88px}
+  body{font-size:16px;line-height:1.65;overflow-x:hidden}
+  .wrap{width:calc(100% - 40px)}
+  .section{padding-block:64px}
+
+  .header{left:10px;right:10px;top:10px;height:68px;padding:8px 12px 8px 14px;border-radius:18px;gap:8px}
+  .brand{gap:8px;min-width:0}
+  .brand img{width:38px;height:26px}
+  .brand>span{font-size:20px;line-height:1.05;letter-spacing:-.04em}
+  .brand small{font-size:7px;letter-spacing:.035em;margin-top:4px;white-space:nowrap}
+  .header-cta{display:none}
+  .menu-toggle{width:44px;height:44px;margin-left:auto;flex:none}
+  .mobile-nav{top:calc(100% + 7px);padding:14px;border-radius:15px}
+  .mobile-nav a{min-height:48px;display:flex;align-items:center;padding:10px 12px;font-size:16px}
+
+  .hero{min-height:680px;height:100svh;max-height:760px}
+  .hero-image{background-position:64% center}
+  .hero-shade{background:linear-gradient(90deg,rgba(12,50,47,.94),rgba(18,62,58,.76) 58%,rgba(18,62,58,.28)),linear-gradient(0deg,rgba(12,50,47,.76),transparent 48%)}
+  .hero-content{padding-top:124px;padding-bottom:62px}
+  .eyebrow.light{font-size:10px;line-height:1.4;margin-bottom:18px}
+  .hero h1{font-size:clamp(32px,9.6vw,39px);line-height:1.12;letter-spacing:-.04em;margin-bottom:18px;max-width:350px;text-wrap:balance}
+  .hero-description{font-size:16px;line-height:1.55;max-width:315px;margin-bottom:20px}
+  .hero-name{font-size:14px;line-height:1.45;margin-bottom:22px;gap:10px}
+  .hero-name:before{width:20px;margin-top:10px}
+  .hero-actions{display:grid;grid-template-columns:1fr;width:100%;max-width:330px;gap:10px}
+  .hero-actions .button{width:100%;min-height:50px;padding:12px 16px;font-size:14px;line-height:1.35}
+  .hero .photo-note{display:none}
+  .hero:after{height:22px}
+
+  .trust-strip{padding-block:18px}
+  .trust-inner{width:calc(100% - 20px);gap:0}
+  .trust-inner>div{padding-inline:6px;gap:7px}
+  .trust-inner svg{width:24px;height:24px}
+  .trust-inner span{font-size:10px;line-height:1.35}
+
+  .intro{padding-top:48px;padding-bottom:52px}
+  .intro-layout{gap:28px}
+  .doctor-portrait{max-width:330px;aspect-ratio:1/1.08}
+  .intro h2,.section-heading h2,.approach-copy h2,.faq h2{font-size:32px;line-height:1.18;text-wrap:balance}
+  .intro-copy .lead,.section-heading p:not(.section-label){font-size:16px;line-height:1.65}
+  .intro-copy .doctor-credentials,.team-note{font-size:14px}
+  .intro-copy .button{width:100%;min-height:50px}
+
+  .treatments{padding-top:42px}
+  .treatment{padding:24px 22px 20px}
+  .treatment h3{font-size:24px}
+  .treatment>p{font-size:16px;line-height:1.6}
+  .treatment-bottom{font-size:13px;min-height:52px}
+
+  .approach-art{min-height:210px;padding:22px}
+  .approach-point{padding-top:20px;margin-top:20px}
+  .home-care{padding-block:32px}
+  .home-care .button{width:100%}
+  .faq{padding-bottom:56px}
+  .faq-list summary{font-size:16px;min-height:68px}
+  .contact{padding-top:58px}
+  .contact h2{font-size:40px}
+  .contact .button{width:100%;max-width:350px;font-size:14px}
+  .floating-wa{display:none}
+}
+
+@media (max-width:360px){
+  .hero{min-height:650px}
+  .hero h1{font-size:31px}
+  .trust-inner span{font-size:9px}
+}
