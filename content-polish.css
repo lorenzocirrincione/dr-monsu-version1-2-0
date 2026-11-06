@@ -35,16 +35,26 @@
 .digital-smile-heading h2{font-size:clamp(38px,4.2vw,58px);line-height:1.08;margin-bottom:22px;color:#f7fbfa;text-wrap:balance}
 .digital-smile-heading>p:not(.section-label){font-size:17px;line-height:1.75;color:#d9efea;max-width:470px;margin:0}
 .digital-smile-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-self:center}
-.digital-smile-steps>div{min-height:280px;padding:26px 23px;border:1px solid rgba(255,255,255,.18);border-radius:18px;background:rgba(247,251,250,.08);backdrop-filter:blur(8px);position:relative;overflow:hidden}
+.digital-smile-steps>div{min-height:280px;padding:26px 23px;border:1px solid rgba(255,255,255,.18);border-radius:18px;background:rgba(247,251,250,.08);backdrop-filter:blur(8px);position:relative;overflow:hidden;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease,background-color .28s ease}
 .digital-smile-steps>div:nth-child(2){background:rgba(42,154,132,.42)}
 .digital-smile-steps>div:nth-child(3){background:#e7f5f1;color:#123e3a;border-color:transparent}
 .digital-smile-steps>div:not(:last-child):after{display:none}
-.digital-smile-steps span{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-size:11px;color:#bfe4df}
+.digital-smile-steps span{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-size:11px;color:#bfe4df;transition:transform .28s ease,background-color .28s ease,color .28s ease}
 .digital-smile-steps>div:nth-child(3) span{border-color:rgba(42,154,132,.35);color:#217c6c}
 .digital-smile-steps h3{font-size:22px;line-height:1.25;margin:48px 0 12px;color:inherit}
 .digital-smile-steps p{font-size:14px;line-height:1.7;color:#d9efea;margin:0}
 .digital-smile-steps>div:nth-child(3) p{color:#476e69}
 .digital-smile-note{grid-column:2;font-size:12px;line-height:1.6;color:#bfe4df;margin:0;padding-left:2px}
+@media(hover:hover) and (pointer:fine){
+  .digital-smile-steps>div:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.42);box-shadow:0 18px 36px rgba(5,37,33,.28)}
+  .digital-smile-steps>div:first-child:hover{background:rgba(247,251,250,.14)}
+  .digital-smile-steps>div:nth-child(2):hover{background:rgba(42,154,132,.58)}
+  .digital-smile-steps>div:nth-child(3):hover{background:#f7fbfa}
+  .digital-smile-steps>div:hover span{transform:scale(1.1);background:#f7fbfa;color:#17584e}
+}
+@media(prefers-reduced-motion:reduce){
+  .digital-smile-steps>div:hover,.digital-smile-steps>div:hover span{transform:none!important}
+}
 .treatment:nth-child(6){background:rgba(216,240,234,.68)}
 .teleconsult{display:grid;grid-template-columns:minmax(0,1fr) 220px auto;align-items:center;gap:42px;padding-block:52px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .teleconsult .section-label{margin-bottom:12px}
