@@ -19,15 +19,23 @@
 .home-care-actions .button{margin:0;max-width:none;white-space:nowrap}
 .home-care-instagram{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;font-size:13px;font-weight:600;color:#17584e}
 .home-care-instagram svg{width:15px;height:15px}
-.digital-smile{display:grid;grid-template-columns:.9fr 1.4fr;gap:70px;padding-block:80px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.digital-smile-heading h2{font-size:clamp(36px,4vw,54px);margin-bottom:20px}
-.digital-smile-heading>p:not(.section-label){font-size:17px;line-height:1.75;color:#476e69;max-width:520px}
-.digital-smile-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-self:center}
-.digital-smile-steps>div{padding:24px 20px;border:1px solid rgba(42,154,132,.25);border-radius:14px;background:rgba(247,251,250,.54)}
-.digital-smile-steps span{font-size:11px;color:#2a9a84}
-.digital-smile-steps h3{font-size:20px;margin:28px 0 10px}
-.digital-smile-steps p{font-size:14px;line-height:1.65;color:#476e69;margin:0}
-.digital-smile-note{grid-column:2;font-size:12px;color:#587c78;margin:0}
+.digital-smile{display:grid;grid-template-columns:minmax(300px,.82fr) minmax(0,1.5fr);gap:70px;padding:68px;border:0;border-radius:28px;background:radial-gradient(circle at 94% 12%,rgba(99,190,172,.34),transparent 30%),linear-gradient(135deg,#123e3a 0%,#17584e 62%,#1d6d60 100%);color:#f7fbfa;box-shadow:0 26px 70px rgba(18,62,58,.16)}
+.digital-smile-heading{align-self:center}
+.digital-smile-heading .section-label{color:#92d8ca;margin-bottom:22px}
+.digital-smile-heading h2{font-size:clamp(38px,4.2vw,58px);line-height:1.08;margin-bottom:22px;color:#f7fbfa;text-wrap:balance}
+.digital-smile-heading>p:not(.section-label){font-size:17px;line-height:1.75;color:#d9efea;max-width:470px;margin:0}
+.digital-smile-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-self:center}
+.digital-smile-steps>div{min-height:280px;padding:26px 23px;border:1px solid rgba(255,255,255,.18);border-radius:18px;background:rgba(247,251,250,.08);backdrop-filter:blur(8px);position:relative;overflow:hidden}
+.digital-smile-steps>div:nth-child(2){background:rgba(42,154,132,.42)}
+.digital-smile-steps>div:nth-child(3){background:#e7f5f1;color:#123e3a;border-color:transparent}
+.digital-smile-steps>div:not(:last-child):after{display:none}
+.digital-smile-steps span{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-size:11px;color:#bfe4df}
+.digital-smile-steps>div:nth-child(3) span{border-color:rgba(42,154,132,.35);color:#217c6c}
+.digital-smile-steps h3{font-size:22px;line-height:1.25;margin:48px 0 12px;color:inherit}
+.digital-smile-steps p{font-size:14px;line-height:1.7;color:#d9efea;margin:0}
+.digital-smile-steps>div:nth-child(3) p{color:#476e69}
+.digital-smile-note{grid-column:2;font-size:12px;line-height:1.6;color:#bfe4df;margin:0;padding-left:2px}
+.treatment:nth-child(6){background:rgba(216,240,234,.68)}
 .teleconsult{display:grid;grid-template-columns:minmax(0,1fr) 220px auto;align-items:center;gap:42px;padding-block:52px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .teleconsult .section-label{margin-bottom:12px}
 .teleconsult h2{font-size:clamp(30px,3.2vw,43px);margin-bottom:12px}
@@ -43,7 +51,7 @@
   .home-care{grid-template-columns:58px minmax(0,1fr)}
   .home-care-actions{grid-column:2;align-self:start;align-items:flex-start}
   .home-care-benefits{grid-template-columns:1fr}
-  .digital-smile{grid-template-columns:1fr;gap:30px}
+  .digital-smile{grid-template-columns:1fr;gap:34px;padding:48px}
   .digital-smile-note{grid-column:1}
   .teleconsult{grid-template-columns:1fr 180px}
   .teleconsult>.button{grid-column:1/-1;justify-self:start}
@@ -63,13 +71,16 @@
   .home-care-actions{grid-column:1/-1;width:100%;align-items:stretch;margin-top:2px}
   .home-care-actions .button{width:100%;white-space:normal;font-size:14px}
   .home-care-instagram{font-size:13px;text-align:center}
-  .digital-smile{padding-block:58px;gap:24px}
-  .digital-smile-heading h2{font-size:32px;line-height:1.18}
-  .digital-smile-heading>p:not(.section-label){font-size:16px}
+  .digital-smile{width:calc(100% - 24px);padding:34px 22px;border-radius:22px;gap:28px}
+  .digital-smile-heading .section-label{margin-bottom:17px}
+  .digital-smile-heading h2{font-size:34px;line-height:1.1;margin-bottom:17px}
+  .digital-smile-heading>p:not(.section-label){font-size:16px;line-height:1.65}
   .digital-smile-steps{grid-template-columns:1fr;gap:10px}
-  .digital-smile-steps>div{padding:19px 18px}
-  .digital-smile-steps h3{font-size:20px;margin:14px 0 7px}
-  .digital-smile-note{font-size:12px;line-height:1.6}
+  .digital-smile-steps>div{min-height:0;padding:20px 18px 22px;display:grid;grid-template-columns:44px 1fr;column-gap:14px;align-items:start}
+  .digital-smile-steps span{grid-row:1/3;width:42px;height:42px}
+  .digital-smile-steps h3{font-size:20px;margin:2px 0 7px}
+  .digital-smile-steps p{font-size:14px;line-height:1.6}
+  .digital-smile-note{font-size:12px;line-height:1.6;padding-top:2px}
   .teleconsult{grid-template-columns:1fr;gap:22px;padding-block:44px}
   .teleconsult h2{font-size:30px;line-height:1.2}
   .teleconsult-price{padding:16px 0 0;border-left:0;border-top:1px solid var(--line)}
