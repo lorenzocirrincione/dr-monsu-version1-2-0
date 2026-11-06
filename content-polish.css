@@ -10,7 +10,7 @@
 }
 .home-care-content{min-width:0;display:grid;grid-template-columns:minmax(280px,.7fr) minmax(0,1.3fr);column-gap:56px;align-items:start}
 .home-care-content .section-label{margin-bottom:12px}
-.home-care-content h2{margin-bottom:14px}
+.home-care-content h2{margin-bottom:14px;max-width:420px;text-wrap:balance}
 .home-care-lead{max-width:420px;margin-bottom:0!important}
 .home-care-content>.section-label,.home-care-content>h2,.home-care-content>.home-care-lead{grid-column:1}
 .home-care-benefits{grid-column:2;grid-row:1/5;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
