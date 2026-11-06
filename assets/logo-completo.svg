@@ -99,4 +99,7 @@
 <use xlink:href="#glyph-0-7" x="210.226785" y="92.385498" />
 <use xlink:href="#glyph-0-4" x="220.888357" y="92.385498" />
 </g>
+<circle cx="54.9" cy="34.23" r="5.67" fill="#CF3E41"/>
+<rect x="54.05" y="31.1" width="1.7" height="6.26" rx=".4" fill="#fff"/>
+<rect x="51.77" y="33.38" width="6.26" height="1.7" rx=".4" fill="#fff"/>
 </svg>

@@ -1,0 +1,43 @@
+/* Ajustes finales de contenido, alineación y sección de atención domiciliaria. */
+.home-care{
+  display:grid;
+  grid-template-columns:68px minmax(0,1fr) minmax(220px,auto);
+  align-items:start;
+  gap:30px;
+  padding-block:52px;
+}
+.home-care-content{min-width:0}
+.home-care-content .section-label{margin-bottom:12px}
+.home-care-content h2{margin-bottom:14px}
+.home-care-lead{max-width:680px;margin-bottom:22px!important}
+.home-care-benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:760px}
+.home-care-benefits p{margin:0;padding:15px 16px;border:1px solid rgba(42,154,132,.22);border-radius:12px;background:rgba(247,251,250,.52)}
+.home-care-benefits strong,.home-care-benefits span{display:block}
+.home-care-benefits strong{font-size:14px;line-height:1.4;margin-bottom:5px;color:var(--ink)}
+.home-care-benefits span{font-size:13px;line-height:1.55;color:#476e69}
+.home-care-actions{align-self:center;display:flex;flex-direction:column;align-items:stretch;gap:12px}
+.home-care-actions .button{margin:0;max-width:none;white-space:nowrap}
+.home-care-instagram{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;font-size:13px;font-weight:600;color:#17584e}
+.home-care-instagram svg{width:15px;height:15px}
+
+@media(max-width:900px){
+  .home-care{grid-template-columns:58px minmax(0,1fr)}
+  .home-care-actions{grid-column:2;align-self:start;align-items:flex-start}
+}
+
+@media(max-width:540px){
+  .home-care{grid-template-columns:48px minmax(0,1fr);gap:16px;padding-block:42px}
+  .home-care-icon{grid-column:1;grid-row:1}
+  .home-care-content{grid-column:1/-1}
+  .home-care-content .section-label{padding-left:64px;min-height:48px;display:flex;align-items:center;margin-top:-64px;margin-bottom:18px}
+  .home-care-content h2{font-size:30px;margin-bottom:14px}
+  .home-care-lead{font-size:15px!important;line-height:1.65!important;margin-bottom:18px!important}
+  .home-care-benefits{grid-template-columns:1fr;gap:10px}
+  .home-care-benefits p{padding:14px}
+  .home-care-benefits strong{font-size:14px}
+  .home-care-benefits span{font-size:13px}
+  .home-care-actions{grid-column:1/-1;width:100%;align-items:stretch;margin-top:2px}
+  .home-care-actions .button{width:100%;white-space:normal;font-size:14px}
+  .home-care-instagram{font-size:13px;text-align:center}
+  .footer-links{flex-wrap:wrap}
+}
