@@ -33,9 +33,9 @@ matchMedia('(min-width: 821px)').addEventListener('change', (event) => { if (eve
 const treatments = {
   general: {
     title: 'Odontología general',
-    intro: 'Una sonrisa saludable empieza por la prevención. En la consulta reviso tus dientes, encías y tejidos bucales para conocer tu situación y explicarte los siguientes pasos.',
+    intro: 'Atiendo a adultos y niños con un enfoque preventivo y cercano. En la consulta reviso dientes, encías y tejidos bucales para conocer cada situación y explicar los siguientes pasos.',
     subtitle: 'Prevención y cuidado continuo',
-    points: ['Revisión periódica y diagnóstico de tu salud bucal.', 'Limpieza profesional para retirar placa y sarro, acompañada de indicaciones de higiene.', 'Un plan que considera tus necesidades y el trabajo con especialistas cuando corresponde.'],
+    points: ['Controles y prevención adaptados a cada etapa de la vida.', 'Limpieza profesional para retirar placa y sarro, acompañada de indicaciones de higiene.', 'Un plan que considera las necesidades de cada paciente y el trabajo con especialistas cuando corresponde.'],
     note: 'La frecuencia de los controles se define según tu situación y tus necesidades.'
   },
   estetica: {
