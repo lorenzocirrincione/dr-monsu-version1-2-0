@@ -1,0 +1,41 @@
+/* Dr. Monsú — identidad clínica v1.2.0. La geometría de los degradados se conserva. */
+:root{
+  --ink:#173F3A;
+  --green:#2A9A84;
+  --deep:#123E3A;
+  --cream:#F7FBFA;
+  --muted:#587C78;
+  --line:rgba(23,63,58,.20);
+  color-scheme:light only;
+}
+html,body{background:#F7FBFA;color:var(--ink)}
+::selection{background:#BFE4DF;color:#123E3A}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:#CF3E41}
+.header{background:rgba(247,251,250,.94);border-color:rgba(255,255,255,.55)}
+.button{background:#2A9A84}
+.button:hover{background:#217C6C}
+.button-outline{background:transparent;border-color:#2A9A84;color:#173F3A}
+.button-outline:hover{background:#D8F0EA}
+.button-primary-hero{background:#2A9A84;border-color:#63BEAC}
+.button-primary-hero:hover{background:#217C6C}
+.hero{background:#123E3A}
+.hero-shade{background:linear-gradient(90deg,rgba(12,50,47,.90),rgba(18,62,58,.66) 32%,rgba(42,154,132,.15) 63%,rgba(42,154,132,.03)),linear-gradient(0deg,rgba(12,50,47,.82),transparent 35%)}
+.hero:after{background:linear-gradient(0deg,#F7FBFA,transparent)}
+.trust-strip{background:rgba(216,240,234,.78)}
+.trust-inner svg{color:#2A9A84}
+.page-flow{background:radial-gradient(ellipse 90% 21% at 95% 12%,rgba(191,228,223,.78),transparent 75%),radial-gradient(ellipse 85% 20% at 5% 31%,rgba(207,237,234,.76),transparent 80%),radial-gradient(ellipse 90% 18% at 94% 51%,rgba(216,232,240,.72),transparent 85%),linear-gradient(180deg,#F7FBFA 0%,#EAF6F2 16%,#DDEFEA 34%,#E8F3F4 55%,#D8F0EA 69%,#BFE4DF 82%,#D8F0EA 100%)}
+.intro-copy,.intro-copy .doctor-credentials,.section-heading p:not(.section-label),.treatment>p,.treatments-footnote,.approach-copy>p:not(.section-label),.approach-point p,.faq>div>p:not(.section-label),.faq-answer{color:#476E69}
+.treatment{background:rgba(255,255,255,.58);border-color:rgba(42,154,132,.24)}
+.treatment:nth-child(2),.treatment:nth-child(4){background:rgba(216,240,234,.68)}
+.treatment:hover{background:rgba(247,251,250,.94);border-color:rgba(42,154,132,.55);box-shadow:0 14px 28px rgba(18,62,58,.10)}
+.treatment-icon{color:#2A9A84}
+.treatment:hover .circle-arrow{background:#2A9A84;color:#F7FBFA}
+.approach-art{background:#F1F9F7;border-color:rgba(42,154,132,.28)}
+.home-care-icon{border-color:rgba(42,154,132,.40)}
+.contact{background:linear-gradient(180deg,rgba(191,228,223,0),rgba(191,228,223,.42) 16%,#A6D8CE 48%,#2A7C70 78%,#123E3A 100%)}
+.contact h2,.contact .section-label,.contact-inner>p:not(.section-label){color:#123E3A}
+.footer{background:#123E3A}
+.floating-wa{background:#E7F5F1;color:#17584E}
+.info-dialog{background:#F1F9F7;border-color:#75B8AA}
+.dialog-close:hover,.dialog-note{background:#D8F0EA}
+@media(max-width:540px){.page-flow{background:radial-gradient(ellipse 140% 18% at 90% 5%,rgba(191,228,223,.78),transparent),radial-gradient(ellipse 120% 20% at 5% 35%,rgba(207,237,234,.72),transparent),linear-gradient(180deg,#F7FBFA,#DDEFEA 35%,#E8F3F4 60%,#BFE4DF 84%,#BFE4DF)}}

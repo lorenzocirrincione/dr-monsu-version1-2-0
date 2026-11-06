@@ -1,0 +1,45 @@
+/* Ajuste a las referencias de distribución facilitadas por el cliente. */
+.hero{min-height:690px;height:min(790px,95svh)}
+.hero-content{padding-top:220px;padding-bottom:145px}
+.hero h1{font-size:clamp(42px,4.5vw,66px);line-height:1.16;letter-spacing:-.05em;max-width:850px;margin-bottom:24px;font-weight:300;color:#f4f1e8}
+.hero-description{max-width:490px;font-size:18px;line-height:1.55;margin-bottom:34px;color:#f3f1e7}
+.hero-name{display:flex;align-items:center;gap:18px;font-size:18px;font-weight:500;line-height:1.5;margin-bottom:30px;color:#f4f1e8}
+.hero-name:before{content:'';height:1px;width:30px;background:currentColor;flex:none}
+.hero-actions{gap:16px;flex-direction:row;align-items:center}
+.hero-actions .button{font-size:14px;min-height:54px;padding:14px 23px;gap:12px}
+.button-primary-hero{background:#157353;border-color:#3b9673;color:#fff}
+.button-primary-hero:hover{background:#0f6246}
+.button-hero-outline{background:transparent;border-color:#e8eddfc9;color:#f4f1e8}
+.button-hero-outline:hover{background:#eef0d71c}
+.button-hero-outline span{font-size:22px;line-height:1}
+.hero .photo-note{bottom:75px}
+.trust-strip{padding:24px 0;background:#e4e8d870}
+.trust-inner{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-inner>div{display:flex;align-items:center;justify-content:center;gap:22px;padding:0 24px}
+.trust-inner>div+div{border-left:1px solid #83937555}
+.trust-inner svg{width:34px;height:34px;stroke-width:1.45;color:#275842}
+.trust-inner span{font-size:14px;font-weight:550;line-height:1.45}
+.intro{padding-top:70px;padding-bottom:65px}
+.intro-layout{grid-template-columns:minmax(240px,.85fr) minmax(0,1.6fr);gap:65px;align-items:center}
+.doctor-portrait{margin:0;border-radius:16px;overflow:hidden;max-width:365px;aspect-ratio:1/1.13;background:#bfe2df;align-self:stretch}
+.doctor-portrait img{width:100%;height:100%;object-fit:cover;object-position:left center}
+.intro-copy{max-width:730px;padding:0;color:var(--ink)}
+.intro-copy .section-label{font-size:11px;letter-spacing:.18em;margin-bottom:18px}
+.intro h2{font-size:clamp(34px,3.5vw,50px);font-weight:400;line-height:1.2;letter-spacing:-.045em;margin-bottom:24px;max-width:720px}
+.intro-copy .lead{font-size:16px;line-height:1.65;margin-bottom:20px}
+.intro-copy .doctor-credentials{font-size:13px;color:#485442;margin-bottom:23px}
+.intro-copy .button{min-height:48px;padding:11px 21px;font-size:13px;gap:20px;border-radius:14px}
+.team-note{font-size:14px;margin-top:20px;margin-bottom:0}
+.treatments{padding-top:55px}
+.section-heading{display:block;margin-bottom:35px}
+.section-heading .section-label{margin-bottom:13px}
+.section-heading h2{font-size:clamp(34px,3.4vw,49px);line-height:1.2;margin-bottom:12px}
+.section-heading p:not(.section-label){font-size:15px;color:#485442;margin-bottom:0}
+h2 em{font-style:normal;color:inherit}
+.approach-copy h2{font-size:44px}
+.faq h2{font-size:44px}
+.contact h2{font-size:clamp(42px,5.1vw,72px)}
+@media(max-width:1100px){.hero-content{padding-top:205px}.hero h1{font-size:55px}.intro-layout{gap:40px;grid-template-columns:.85fr 1.4fr}.intro h2{font-size:36px}.intro-copy .lead{font-size:15px}.trust-inner>div{padding-inline:18px;gap:18px}.trust-inner span{font-size:13px}}
+@media(max-width:820px){.hero{min-height:690px;height:760px}.hero-content{padding-top:190px}.hero h1{font-size:48px;max-width:700px}.hero-description{max-width:440px;font-size:17px}.hero-name{font-size:17px}.hero-actions{gap:13px}.hero-actions .button{font-size:12px;padding-inline:18px}.intro-layout{grid-template-columns:.8fr 1.2fr;gap:28px}.doctor-portrait{aspect-ratio:1/1.4;max-width:none}.intro h2{font-size:31px}.intro-copy .section-label{font-size:9px}.intro-copy .lead{font-size:14px}.intro-copy .doctor-credentials{font-size:11px}.team-note{font-size:12px}.trust-inner>div{gap:12px;padding-inline:12px}.trust-inner svg{width:27px;height:27px}.trust-inner span{font-size:11px}.section-heading h2{font-size:38px}.approach-copy h2,.faq h2{font-size:37px}}
+@media(max-width:540px){.hero{min-height:730px;height:94svh;max-height:900px}.hero-content{padding-top:170px;padding-bottom:120px}.hero h1{font-size:clamp(29px,8.3vw,40px);line-height:1.25;letter-spacing:-.045em;margin-bottom:23px}.hero-description{font-size:15px;max-width:300px;line-height:1.6;margin-bottom:28px}.hero-name{font-size:14px;gap:12px;margin-bottom:27px;letter-spacing:-.015em}.hero-name:before{width:22px}.hero-actions{align-items:start;flex-direction:column;gap:12px}.hero-actions .button{font-size:12px;min-height:50px;padding:12px 19px}.hero .photo-note{bottom:54px}.trust-strip{padding-block:21px}.trust-inner{width:calc(100% - 24px)}.trust-inner>div{gap:10px;padding-inline:9px;align-items:center;flex-direction:column;text-align:center}.trust-inner svg{width:26px;height:26px}.trust-inner span{font-size:10px;line-height:1.5}.intro{padding-top:44px;padding-bottom:45px}.intro-layout{grid-template-columns:1fr;gap:30px}.doctor-portrait{width:100%;max-width:350px;aspect-ratio:1/1.05;margin-inline:auto;border-radius:13px}.doctor-portrait img{object-position:left 40%}.intro-copy .section-label{font-size:10px;margin-bottom:15px}.intro h2{font-size:32px;line-height:1.25;margin-bottom:20px}.intro-copy .lead{font-size:15px}.intro-copy .doctor-credentials{font-size:12px;line-height:1.8;margin-bottom:20px}.intro-copy .button{font-size:12px;min-height:48px}.team-note{font-size:13px;margin-top:18px}.treatments{padding-top:35px}.section-heading h2{font-size:33px;line-height:1.2}.section-heading p:not(.section-label){font-size:14px;line-height:1.7}.approach-copy h2,.faq h2{font-size:34px}.contact h2{font-size:42px}}
+@media(max-width:350px){.hero-name{font-size:12px}.hero h1{font-size:28px}.hero-description{font-size:14px}.trust-inner span{font-size:9px}.intro h2{font-size:29px}}

@@ -1,0 +1,5 @@
+/* Conserva la identidad clara aun cuando el navegador solicita modo oscuro. */
+:root{color-scheme:light only}
+html,body{background-color:#e9e5d4;color:#243d32}
+.page-flow{background-color:#e7e7d5}
+.treatment{color:#243d32}
