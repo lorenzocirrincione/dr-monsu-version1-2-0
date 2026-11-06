@@ -1,21 +1,27 @@
 /* Ajustes finales de contenido, alineación y sección de atención domiciliaria. */
 .home-care{
   display:grid;
-  grid-template-columns:68px minmax(0,1fr) minmax(220px,auto);
+  grid-template-columns:68px minmax(0,1fr);
   align-items:start;
   gap:30px;
-  padding-block:52px;
+  padding-block:64px;
 }
-.home-care-content{min-width:0}
+.home-care-content{min-width:0;display:grid;grid-template-columns:minmax(280px,.7fr) minmax(0,1.3fr);column-gap:56px;align-items:start}
 .home-care-content .section-label{margin-bottom:12px}
 .home-care-content h2{margin-bottom:14px}
-.home-care-lead{max-width:680px;margin-bottom:22px!important}
-.home-care-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:900px}
-.home-care-benefits p{margin:0;padding:15px 16px;border:1px solid rgba(42,154,132,.22);border-radius:12px;background:rgba(247,251,250,.52)}
+.home-care-lead{max-width:420px;margin-bottom:0!important}
+.home-care-content>.section-label,.home-care-content>h2,.home-care-content>.home-care-lead{grid-column:1}
+.home-care-benefits{grid-column:2;grid-row:1/5;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.home-care-benefits p{margin:0;padding:18px;border:1px solid rgba(42,154,132,.22);border-radius:14px;background:rgba(247,251,250,.58)}
+.home-care-benefits small{display:block;font-size:10px;letter-spacing:.08em;color:#2a9a84;margin-bottom:18px}
 .home-care-benefits strong,.home-care-benefits span{display:block}
-.home-care-benefits strong{font-size:14px;line-height:1.4;margin-bottom:5px;color:var(--ink)}
-.home-care-benefits span{font-size:13px;line-height:1.55;color:#476e69}
-.home-care-actions{align-self:center;display:flex;flex-direction:column;align-items:stretch;gap:12px}
+.home-care-benefits strong{font-size:16px;line-height:1.35;margin-bottom:5px;color:var(--ink)}
+.home-care-benefits span{font-size:13px;line-height:1.5;color:#476e69}
+.home-care-benefits .home-care-emergency{grid-column:1/-1;display:grid;grid-template-columns:70px minmax(170px,.65fr) 1fr;align-items:center;gap:18px;background:#17584e;border-color:#17584e;color:#f7fbfa}
+.home-care-emergency small,.home-care-emergency strong{margin:0;color:#f7fbfa}
+.home-care-emergency span{margin:0;color:#d9efea}
+.home-care-emergency small{font-family:var(--display);font-size:22px;letter-spacing:-.03em;text-align:center}
+.home-care-actions{grid-column:2;display:flex;flex-direction:row;align-items:center;gap:22px;margin-top:-4px}
 .home-care-actions .button{margin:0;max-width:none;white-space:nowrap}
 .home-care-instagram{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;font-size:13px;font-weight:600;color:#17584e}
 .home-care-instagram svg{width:15px;height:15px}
@@ -49,8 +55,9 @@
 
 @media(max-width:900px){
   .home-care{grid-template-columns:58px minmax(0,1fr)}
-  .home-care-actions{grid-column:2;align-self:start;align-items:flex-start}
-  .home-care-benefits{grid-template-columns:1fr}
+  .home-care-content{display:block}
+  .home-care-benefits{grid-template-columns:1fr 1fr;margin-top:24px}
+  .home-care-actions{grid-column:2;align-self:start;align-items:center;margin-top:0}
   .digital-smile{grid-template-columns:1fr;gap:34px;padding:48px}
   .digital-smile-note{grid-column:1}
   .teleconsult{grid-template-columns:1fr 180px}
@@ -66,9 +73,13 @@
   .home-care-lead{font-size:15px!important;line-height:1.65!important;margin-bottom:18px!important}
   .home-care-benefits{grid-template-columns:1fr;gap:10px}
   .home-care-benefits p{padding:14px}
+  .home-care-benefits small{margin-bottom:12px}
   .home-care-benefits strong{font-size:14px}
   .home-care-benefits span{font-size:13px}
-  .home-care-actions{grid-column:1/-1;width:100%;align-items:stretch;margin-top:2px}
+  .home-care-benefits .home-care-emergency{grid-template-columns:52px 1fr;gap:12px;padding:16px}
+  .home-care-emergency span{grid-column:2}
+  .home-care-emergency small{grid-row:1/3;font-size:19px}
+  .home-care-actions{grid-column:1/-1;width:100%;align-items:stretch;flex-direction:column;gap:8px;margin-top:2px}
   .home-care-actions .button{width:100%;white-space:normal;font-size:14px}
   .home-care-instagram{font-size:13px;text-align:center}
   .digital-smile{width:calc(100% - 24px);padding:34px 22px;border-radius:22px;gap:28px}
