@@ -132,3 +132,11 @@
 
 .dialog-close:focus:not(:focus-visible){outline:none}
 .dialog-close:focus-visible{outline:2px solid #2a9a84;outline-offset:3px}
+
+/* Presentación ampliada del servicio domiciliario. */
+.home-care-content{row-gap:0}
+.home-care-description{grid-column:1/-1;margin-top:28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:24px;border-top:1px solid var(--line)}
+.home-care .home-care-description p{font-size:16px;line-height:1.75;color:#476e69;margin:0}
+.teleconsult{grid-template-columns:minmax(0,1fr) auto}
+@media(max-width:900px){.home-care-description{grid-template-columns:1fr;gap:16px}.teleconsult{grid-template-columns:1fr}.teleconsult>.button{grid-column:auto}}
+@media(max-width:540px){.home-care .home-care-description p{font-size:16px}.home-care-description{margin-top:22px;padding-top:22px}}

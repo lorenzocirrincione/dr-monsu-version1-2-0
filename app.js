@@ -57,15 +57,7 @@ const treatments = {
     intro: 'Los implantes son una de las opciones para reemplazar dientes perdidos. El diagnóstico permite valorar tu situación y planificar el tratamiento junto con el equipo.',
     subtitle: 'Planificación para cada sonrisa',
     points: ['Opciones para reemplazar un diente, varios dientes o una arcada completa.', 'Evaluación de las condiciones de hueso y encías antes de elegir una alternativa.', 'Planificación digital y cirugía guiada cuando están indicadas para tu caso.'],
-    note: 'La indicación, los tiempos y el presupuesto se definen después de una evaluación individual.',
-    faqs: [
-      ['¿Cómo funciona un implante dental?', 'Es un soporte colocado en el hueso que reemplaza la raíz perdida. Sobre él se fija una corona, un puente o una prótesis.'],
-      ['¿Cuándo puede ser recomendable?', 'Cuando falta uno o más dientes. Primero evalúo si es posible conservar las piezas naturales y qué alternativas se adaptan a tu salud bucal.'],
-      ['¿Cuáles son las etapas del tratamiento?', 'Evaluación y estudios, planificación, colocación del implante, cicatrización y restauración definitiva. Después se realizan controles y mantenimiento.'],
-      ['¿Cuánto cuesta?', 'Depende del número de implantes, la restauración y los procedimientos adicionales. Tras el diagnóstico recibirás un presupuesto con las etapas previstas.'],
-      ['¿Para qué sirve la cirugía guiada?', 'Una guía diseñada a partir de estudios digitales ayuda a trasladar la planificación a la cirugía. Su indicación depende del caso.'],
-      ['¿Cuánto tiempo lleva?', 'Varía según la cicatrización y la necesidad de tratamientos previos. En la consulta se explican los plazos y las opciones provisionales disponibles.']
-    ]
+    note: 'La indicación, los tiempos y el presupuesto se definen después de una evaluación individual.'
   },
   endodoncia: {
     title: 'Endodoncia',
@@ -109,9 +101,7 @@ document.querySelectorAll('[data-treatment]').forEach((button) => {
     openPanel({
       title: treatment.title,
       eyebrow: 'TRATAMIENTOS · DR. MONSÚ',
-      html: treatment.faqs
-        ? `<p>${treatment.intro}</p><h3>Resuelve tus dudas sobre implantes</h3><div class="implant-faq">${treatment.faqs.map(([question, answer]) => `<details name="implant-questions"><summary>${question}<span class="faq-symbol" aria-hidden="true"></span></summary><p>${answer}</p></details>`).join('')}</div><p class="dialog-note">${treatment.note}</p>`
-        : `<p>${treatment.intro}</p><h3>${treatment.subtitle}</h3><ul>${treatment.points.map((point) => `<li>${point}</li>`).join('')}</ul><p class="dialog-note">${treatment.note}</p>`,
+      html: `<p>${treatment.intro}</p><h3>${treatment.subtitle}</h3><ul>${treatment.points.map((point) => `<li>${point}</li>`).join('')}</ul><p class="dialog-note">${treatment.note}</p>`,
       message: `Hola Dr. Monsú, quisiera información sobre ${treatment.title.toLowerCase()} y coordinar una evaluación.`,
       cta: 'Consulta sobre este tratamiento'
     });
@@ -119,7 +109,7 @@ document.querySelectorAll('[data-treatment]').forEach((button) => {
 });
 document.querySelector('#formation-open').addEventListener('click', () => openPanel({
   title: 'Formación y trayectoria', eyebrow: 'SOBRE EL DR. MONSÚ',
-  html: '<p>Soy Maximiliano Monsú Hossly, cirujano dentista graduado en Córdoba, Argentina. Cuento con más de diez años de experiencia y una trayectoria laboral en Argentina, España, Alemania, Suiza y Perú.</p><h3>Estudios de posgrado en</h3><ul><li>Implantología y cirugía periodontal.</li><li>Regeneración ósea guiada.</li><li>Rehabilitación oral adhesiva.</li><li>Odontología digital.</li><li>Endodoncia.</li></ul><p>Mi enfoque combina atención cercana, formación continua y trabajo interdisciplinario.</p><p class="dialog-note">Colegiatura profesional: C.O.P. 50473.</p>',
+  html: '<p>Soy Maximiliano Monsú Hossly, cirujano dentista graduado en Córdoba, Argentina. Cuento con más de diez años de experiencia y una trayectoria laboral en Argentina, España, Alemania, Suiza y Perú.</p><h3>Estudios de posgrado en</h3><ul><li>Implantología y cirugía periodontal.</li><li>Regeneración ósea guiada.</li><li>Rehabilitación oral adhesiva.</li><li>Odontología digital.</li><li>Endodoncia.</li></ul><p>Mi enfoque combina atención cercana, formación continua y trabajo interdisciplinario.</p><p class="dialog-note">Colegiado en Perú · C.O.P. 50473.</p>',
   message: 'Hola Dr. Monsú, quisiera coordinar una consulta.', cta: 'Conversemos sobre tu consulta'
 }));
 document.querySelector('#privacy-open').addEventListener('click', () => openPanel({
