@@ -140,3 +140,19 @@
 .teleconsult{grid-template-columns:minmax(0,1fr) auto}
 @media(max-width:900px){.home-care-description{grid-template-columns:1fr;gap:16px}.teleconsult{grid-template-columns:1fr}.teleconsult>.button{grid-column:auto}}
 @media(max-width:540px){.home-care .home-care-description p{font-size:16px}.home-care-description{margin-top:22px;padding-top:22px}}
+
+/* Etiquetas de sección con mayor presencia y legibilidad. */
+.section-label,.eyebrow,.eyebrow.light,
+.intro-copy .section-label,.home-care .section-label,
+.home-care-content .section-label,.approach-copy .section-label,
+.contact .section-label,.info-dialog .section-label{
+  font-size:14px;line-height:1.5;font-weight:650;letter-spacing:.12em;
+}
+@media(max-width:540px){
+  .section-label,.eyebrow,.eyebrow.light,
+  .intro-copy .section-label,.home-care .section-label,
+  .home-care-content .section-label,.approach-copy .section-label,
+  .contact .section-label,.info-dialog .section-label{
+    font-size:13px;letter-spacing:.09em;
+  }
+}
